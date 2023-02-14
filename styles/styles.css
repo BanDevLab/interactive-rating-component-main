@@ -6,4 +6,11 @@ body {
   place-content: center;
 }
 
+  
+.thank_container{
+  display: grid;
+  grid-template-columns: 5fr;
+  margin: auto 0;
+  max-width: 60rem;
+}
 /*# sourceMappingURL=styles.css.map */
