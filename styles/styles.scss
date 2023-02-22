@@ -9,7 +9,26 @@ $Very-Dark-Blue: hsl(216, 12%, 8%);
 
 body{
     background-color: $Very-Dark-Blue;
-    min-width: 100vh;
     display: grid;
     place-content: center;
+    min-height: 100vh;
+    color: $Medium-Grey;
+
+    main{
+        border-radius: 1.5rem;
+        background-color: $Dark-Blue;
+        padding: 2.5rem;
+        max-width: 15rem;
+    }
+    .rating_container{
+        display: grid;
+        grid-template-columns: 5fr;
+        
+    }
+
+    .thank_container{
+        display: grid;
+        grid-template-columns: 5fr;
+      }
 }
+
