@@ -33,6 +33,54 @@ body .rating_container p {
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
+body .rating_container form {
+  display: grid;
+}
+body .rating_container form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  gap: 1.1rem;
+}
+body .rating_container form div input {
+  visibility: hidden;
+  display: none;
+}
+body .rating_container form div label {
+  display: inline-flex;
+  background-color: hsl(210deg, 25%, 25%);
+  width: 1.2rem;
+  color: hsl(216deg, 12%, 54%);
+  justify-content: center;
+  padding: 1.05rem 1rem 0.9rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: 700;
+}
+body .rating_container form div label:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+body .rating_container form div input:checked + label {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+}
+body .rating_container form button {
+  background-color: hsl(25deg, 97%, 53%);
+  border-radius: 1.2rem;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+body .rating_container form button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
 body .thank_container {
   display: grid;
   grid-template-columns: 5fr;

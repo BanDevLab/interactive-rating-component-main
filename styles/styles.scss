@@ -41,6 +41,58 @@ body{
             font-weight: 400;
             margin-bottom: 1.5rem;
         }
+        form{
+            display: grid;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem auto;
+                gap: 1.1rem;
+
+                input{
+                    visibility: hidden;
+                    display: none;
+                }
+                label{
+                    display: inline-flex;
+                    background-color: $Medium-Blue;
+                    width: 1.2rem;
+                    color:$Medium-Grey;
+                    justify-content: center;
+                    padding: 1.05rem 1rem .9rem 1rem;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    font-weight: 700;
+
+                    &:hover{
+                        background-color: $Orange;
+                        color: $White;
+                    }
+                }
+                input:checked+label{
+                    background-color: $Medium-Grey;
+                    color:$White;
+                }
+            }
+            button{
+                background-color: $Orange;
+                border-radius: 1.2rem;
+                border: none;
+                margin-top: 1rem;
+                padding: .8rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+                cursor: pointer;
+                text-transform: uppercase;
+                &:hover{
+
+                    background-color: $White;
+                    color: $Orange;
+                }
+            }
+
+        }
 
     }
 
