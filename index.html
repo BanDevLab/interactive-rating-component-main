@@ -27,8 +27,8 @@
 <body>
 
   <!-- Rating state start -->
-  <main class="conteiner">
-    <div class="rating_container">
+  <main class="conteiner" id="main">
+    <div class="rating_container" id="RatingContainer">
       <div>
         <img src="images/icon-star.svg" class="star-icon" alt="star">
 
@@ -39,19 +39,19 @@
       </div>
       <form action="" method="get">
         <div>
-          <input type="radio" id="one" name="rating" value="1">
+          <input type="radio" id="one" name="Radios" value="1">
           <label for="one">1</label>
 
-          <input type="radio" id="tow" name="rating" value="2">
+          <input type="radio" id="tow" name="Radios" value="2">
           <label for="tow">2</label>
 
-          <input type="radio" id="three" name="rating" value="3">
+          <input type="radio" id="three" name="Radios" value="3">
           <label for="three">3</label>
 
-          <input type="radio" id="four" name="rating" value="4">
+          <input type="radio" id="four" name="Radios" value="4">
           <label for="four">4</label>
 
-          <input type="radio" id="five" name="rating" value="5">
+          <input type="radio" id="five" name="Radios" value="5">
           <label for="five">5</label>
         </div>
         <button type="button" id="Submit">Submit</button>
@@ -59,12 +59,10 @@
     </div>
     <!-- Rating state end -->
 
-    
-    <!-- Thank you state start 
-    <div class="thank_container">
+    <div class="thank_container" id="ThankContainer">
       <img src="images/illustration-thank-you.svg" alt="Thank you!">
 
-      <p>You selected <span id="display_rating"></span> out of 5</p>
+      <p id="selected">You selected <span id="DisplayRating"></span> out of 5</p>
 
       <h2>Thank you!</h2>
       <p>
@@ -72,15 +70,15 @@
         don’t hesitate to get in touch!
       </p>
     </div>
-    -->
+    
     <!-- Thank you state end -->
 
   </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/BanDevLab">Pablo D. Banegas</a>.
   </div>
 </body>
-
+<script src="./script.js"></script>
 </html>

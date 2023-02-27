@@ -4,78 +4,87 @@ $Orange: hsl(25, 97%, 53%);
 $White: hsl(0, 0%, 100%);
 $Light-Grey: hsl(217, 12%, 63%);
 $Medium-Grey: hsl(216, 12%, 54%);
-$Medium-Blue:hsl(210, 25%, 25%);
+$Medium-Blue: hsl(210, 25%, 25%);
 $Dark-Blue: hsl(213, 19%, 18%);
 $Very-Dark-Blue: hsl(216, 12%, 8%);
 
-body{
+body {
     background-color: $Very-Dark-Blue;
     display: grid;
     place-content: center;
     min-height: 100vh;
     color: $Medium-Grey;
-    font-family: "Overpass",sans-serif;
-    main{
+    font-family: "Overpass", sans-serif;
+
+    main {
         border-radius: 1.5rem;
         background-color: $Dark-Blue;
         padding: 2.5rem;
         max-width: 22rem;
     }
-    .rating_container{
+
+    .rating_container {
         display: grid;
         grid-template-columns: 5fr;
-        
-        .star-icon{
-            background-color:$Medium-Blue;
-            padding:.75rem;
-            border-radius: 50%;    
+
+        .star-icon {
+            background-color: $Medium-Blue;
+            padding: .75rem;
+            border-radius: 50%;
         }
-        h1{
+
+        h1 {
             color: $White;
             font-size: 1.8rem;
             margin: 1.5rem 0;
             font-weight: 700;
         }
-        p{
+
+        p {
             line-height: 1.5;
             font-weight: 400;
             margin-bottom: 1.5rem;
         }
-        form{
+
+        form {
             display: grid;
-            div{
+
+            div {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin: 1rem auto;
                 gap: 1.1rem;
 
-                input{
+                input {
                     visibility: hidden;
                     display: none;
                 }
-                label{
+
+                label {
                     display: inline-flex;
                     background-color: $Medium-Blue;
                     width: 1.2rem;
-                    color:$Medium-Grey;
+                    color: $Medium-Grey;
                     justify-content: center;
                     padding: 1.05rem 1rem .9rem 1rem;
                     cursor: pointer;
                     border-radius: 50%;
                     font-weight: 700;
 
-                    &:hover{
+                    &:hover {
                         background-color: $Orange;
                         color: $White;
                     }
                 }
-                input:checked+label{
+
+                input:checked+label {
                     background-color: $Medium-Grey;
-                    color:$White;
+                    color: $White;
                 }
             }
-            button{
+
+            button {
                 background-color: $Orange;
                 border-radius: 1.2rem;
                 border: none;
@@ -85,7 +94,8 @@ body{
                 letter-spacing: 2px;
                 cursor: pointer;
                 text-transform: uppercase;
-                &:hover{
+
+                &:hover {
 
                     background-color: $White;
                     color: $Orange;
@@ -96,10 +106,37 @@ body{
 
     }
 
-    .thank_container{
-        display: grid;
-        grid-template-columns: 5fr;
-      }
-    
-}
+    .thank_container {
+        display: none;
+        text-align: center;
 
+        img {
+            margin-bottom: 1rem;
+        }
+
+        #selected {
+            color: $Orange;
+            background-color: $Medium-Blue;
+            padding: .4rem .9rem;
+            margin-bottom: 1rem;
+            border-radius: 2rem;
+            display: inline-block;
+        }
+
+        h2 {
+            color: $White;
+            font-size: 1.8rem;
+            margin: 1.5rem 0;
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 1.5;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .attribution{
+        margin-top: 1rem;
+    }
+}

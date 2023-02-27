@@ -82,8 +82,33 @@ body .rating_container form button:hover {
   color: hsl(25deg, 97%, 53%);
 }
 body .thank_container {
-  display: grid;
-  grid-template-columns: 5fr;
+  display: none;
+  text-align: center;
+}
+body .thank_container img {
+  margin-bottom: 1rem;
+}
+body .thank_container #selected {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(210deg, 25%, 25%);
+  padding: 0.4rem 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  display: inline-block;
+}
+body .thank_container h2 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+  font-weight: 700;
+}
+body .thank_container p {
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+body .attribution {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
